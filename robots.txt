@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://doweljay.github.io/sitemap.xml
