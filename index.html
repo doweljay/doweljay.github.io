@@ -13,14 +13,14 @@
   <meta name="author" content="Dowel Jay Paosal" />
   <link rel="canonical" href="https://doweljay.github.io/" />
 
-  <!-- Open Graph (LinkedIn, Facebook, Messenger) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="Dowel Jay Paosal — IT Student" />
   <meta property="og:description" content="IT student at NORSU BSC building calculators, ordering systems, and scoreboard systems." />
   <meta property="og:url" content="https://doweljay.github.io/" />
   <meta property="og:image" content="https://doweljay.github.io/photo.jpg" />
 
-  <!-- Twitter / X Card -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Dowel Jay Paosal — IT Student" />
   <meta name="twitter:description" content="IT student at NORSU BSC building calculators, ordering systems, and scoreboard systems." />
@@ -61,6 +61,28 @@
       "JavaScript",
       "HTML",
       "CSS"
+    ],
+    "workExample": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Mock Calculator",
+        "applicationCategory": "UtilitiesApplication",
+        "url": "https://kalkulator-dowel.vercel.app",
+        "codeRepository": "https://github.com/doweljay/KALKULATOR",
+        "author": { "@type": "Person", "name": "Dowel Jay Paosal" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Ordering System",
+        "applicationCategory": "BusinessApplication",
+        "author": { "@type": "Person", "name": "Dowel Jay Paosal" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Basketball Scoreboard System",
+        "applicationCategory": "SportsApplication",
+        "author": { "@type": "Person", "name": "Dowel Jay Paosal" }
+      }
     ]
   }
   </script>
@@ -73,6 +95,7 @@
       --bg: #ffffff;
       --card: #f7f8fa;
       --border: #e5e7eb;
+      --progress: #f59e0b;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -116,10 +139,65 @@
     p:last-child { margin-bottom: 0; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    ul.plain { list-style: none; padding: 0; }
-    ul.projects { padding-left: 1.2rem; }
-    ul.projects li { margin-bottom: 0.6rem; }
-    ul.projects li strong { font-weight: 600; }
+
+    /* Project cards */
+    .projects { display: flex; flex-direction: column; gap: 0.75rem; }
+    .project {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.15rem;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+    .project:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .project-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.25rem;
+    }
+    .project-title {
+      font-weight: 600;
+      font-size: 1.02rem;
+    }
+    .project-title a { color: var(--text); }
+    .project-title a:hover { color: var(--accent); text-decoration: none; }
+    .project-desc {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .project-links {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+    }
+    .project-links a { font-weight: 500; }
+    .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .badge-live {
+      background: #d1fae5;
+      color: #065f46;
+    }
+    .badge-progress {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    /* Focus chips */
     ul.chips {
       list-style: none; padding: 0;
       display: flex; flex-wrap: wrap; gap: 0.5rem;
@@ -131,6 +209,8 @@
       border-radius: 999px;
       font-size: 0.9rem;
     }
+
+    /* Social buttons */
     ul.links {
       list-style: none; padding: 0;
       display: flex; flex-wrap: wrap; gap: 0.75rem;
@@ -151,6 +231,26 @@
       border-color: var(--accent);
       text-decoration: none;
     }
+
+    /* Video */
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #000;
+    }
+    .video-wrapper iframe,
+    .video-wrapper video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+
     footer {
       margin-top: 4rem;
       padding-top: 1.5rem;
@@ -192,11 +292,54 @@
 
   <section>
     <h3>Projects</h3>
-    <ul class="projects">
-      <li><strong>Mock Calculator</strong> — A functional calculator app built as a practice project.</li>
-      <li><strong>Ordering System</strong> — A system for managing customer orders and transactions.</li>
-      <li><strong>Basketball Scoreboard System</strong> — A digital scoreboard for tracking basketball game scores.</li>
-    </ul>
+    <div class="projects">
+
+      <!-- Mock Calculator — LIVE -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-title">
+            <a href="https://kalkulator-dowel.vercel.app" target="_blank" rel="noopener">Mock Calculator</a>
+          </span>
+          <span class="badge badge-live">Live</span>
+        </div>
+        <p class="project-desc">A functional calculator app built as a practice project.</p>
+        <div class="project-links">
+          <a href="https://kalkulator-dowel.vercel.app" target="_blank" rel="noopener">▸ Live Demo</a>
+          <a href="https://github.com/doweljay/KALKULATOR" target="_blank" rel="noopener">▸ Source Code</a>
+        </div>
+      </div>
+
+      <!-- Ordering System — In Progress -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-title">Ordering System</span>
+          <span class="badge badge-progress">In Progress</span>
+        </div>
+        <p class="project-desc">A system for managing customer orders and transactions.</p>
+      </div>
+
+      <!-- Basketball Scoreboard — In Progress -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-title">Basketball Scoreboard System</span>
+          <span class="badge badge-progress">In Progress</span>
+        </div>
+        <p class="project-desc">A digital scoreboard for tracking basketball game scores.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h3>Highlight Video</h3>
+
+    <div class="video-wrapper">
+  <video controls poster="photo.jpg">
+    <source src="dj.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+    </div>
   </section>
 
   <section>
@@ -215,9 +358,9 @@
     <h3>Find Me Online</h3>
     <ul class="links">
       <li><a href="https://www.tiktok.com/@cokes_s" target="_blank" rel="noopener">TikTok</a></li>
-      <li><a href="https://github.com/doweljay" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="https://www.facebook.com/" target="@Dowel Jay Paosal" rel="noopener">Facebook</a></li>
-      <li><a href="https://www.instagram.com/idealdowel_" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://github.com/idealdowel" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.instagram.com/ideal_dowel" target="_blank" rel="noopener">Instagram</a></li>
     </ul>
   </section>
 
