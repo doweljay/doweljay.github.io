@@ -3,30 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Google Verification -->
   <meta name="google-site-verification" content="PP3dLwdq7ck8GVkAFoFTDTNfws0jmffI9g-TbypXkes" />
 
-  <!-- SEO Basics -->
-  <title>Dowel Jay Paosal — IT Student</title>
-  <meta name="description" content="Dowel Jay Paosal is an IT student at NORSU BSC (BS Information Technology), building software projects like a mock calculator, ordering system, and basketball scoreboard system." />
+  <title>Dowel Jay Paosal - IT Student</title>
+  <meta name="description" content="Dowel Jay Paosal is a BS Information Technology student at NORSU, Bayawan City Campus. He builds a mock calculator, an ordering system, and a basketball scoreboard system." />
   <meta name="author" content="Dowel Jay Paosal" />
   <link rel="canonical" href="https://doweljay.github.io/" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Dowel Jay Paosal — IT Student" />
-  <meta property="og:description" content="IT student at NORSU BSC building calculators, ordering systems, and scoreboard systems." />
+  <meta property="og:title" content="Dowel Jay Paosal - IT Student" />
+  <meta property="og:description" content="IT student at NORSU Bayawan City Campus building calculators, ordering systems, and scoreboard systems." />
   <meta property="og:url" content="https://doweljay.github.io/" />
-  <meta property="og:image" content="https://doweljay.github.io/photo.jpg" />
+  <meta property="og:image" content="https://doweljay.github.io/photo.png" />
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dowel Jay Paosal — IT Student" />
-  <meta name="twitter:description" content="IT student at NORSU BSC building calculators, ordering systems, and scoreboard systems." />
-  <meta name="twitter:image" content="https://doweljay.github.io/photo.jpg" />
+  <meta name="twitter:title" content="Dowel Jay Paosal - IT Student" />
+  <meta name="twitter:description" content="IT student at NORSU Bayawan City Campus building calculators, ordering systems, and scoreboard systems." />
+  <meta name="twitter:image" content="https://doweljay.github.io/photo.png" />
 
-  <!-- Schema.org Person Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,14 +31,15 @@
     "alternateName": "doweljay",
     "jobTitle": "IT Student",
     "url": "https://doweljay.github.io",
-    "image": "https://doweljay.github.io/photo.jpg",
-    "description": "IT student at NORSU BSC (BS Information Technology) building software projects including a mock calculator, ordering system, and basketball scoreboard system.",
+    "image": "https://doweljay.github.io/photo.png",
+    "description": "BS Information Technology student at NORSU, Bayawan City Campus, building a mock calculator, an ordering system, and a basketball scoreboard system.",
     "alumniOf": {
       "@type": "CollegeOrUniversity",
-      "name": "Negros Oriental State University - Bayawan Campus"
+      "name": "Negros Oriental State University - Bayawan City Campus"
     },
     "address": {
       "@type": "PostalAddress",
+      "addressLocality": "Bayawan City",
       "addressRegion": "Negros Oriental",
       "addressCountry": "PH"
     },
@@ -54,322 +49,284 @@
       "https://www.facebook.com/",
       "https://www.instagram.com/ideal_dowel"
     ],
-    "knowsAbout": [
-      "Information Technology",
-      "Web Development",
-      "Software Development",
-      "JavaScript",
-      "HTML",
-      "CSS"
-    ],
-    "workExample": [
-      {
-        "@type": "SoftwareApplication",
-        "name": "Mock Calculator",
-        "applicationCategory": "UtilitiesApplication",
-        "url": "https://kalkulator-dowel.vercel.app",
-        "codeRepository": "https://github.com/doweljay/KALKULATOR",
-        "author": { "@type": "Person", "name": "Dowel Jay Paosal" }
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Ordering System",
-        "applicationCategory": "BusinessApplication",
-        "author": { "@type": "Person", "name": "Dowel Jay Paosal" }
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Basketball Scoreboard System",
-        "applicationCategory": "SportsApplication",
-        "author": { "@type": "Person", "name": "Dowel Jay Paosal" }
-      }
-    ]
+    "knowsAbout": ["Information Technology", "Web Development", "JavaScript", "HTML", "CSS"]
   }
   </script>
 
   <style>
     :root {
-      --text: #1a1a1a;
-      --muted: #5f6368;
-      --accent: #0066cc;
-      --bg: #ffffff;
-      --card: #f7f8fa;
-      --border: #e5e7eb;
-      --progress: #f59e0b;
+      --ink: #3b1530;
+      --muted: #7d5a70;
+      --pink: #e8447f;
+      --pink-soft: #ffd6e6;
+      --pink-pale: #fff3f8;
+      --card: rgba(255, 255, 255, 0.72);
+      --line: rgba(232, 68, 127, 0.18);
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #ffe9f2;
+        --muted: #d3a8bf;
+        --pink: #ff6fa3;
+        --pink-soft: #5a2342;
+        --pink-pale: #1f0c19;
+        --card: rgba(48, 20, 38, 0.72);
+        --line: rgba(255, 111, 163, 0.25);
+      }
+    }
+    * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 3rem 1.5rem 4rem;
-      line-height: 1.7;
-      color: var(--text);
-      background: var(--bg);
-      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--pink-pale);
+      overflow-x: hidden;
     }
-    header {
-      display: flex;
-      gap: 1.5rem;
-      align-items: center;
-      margin-bottom: 2.5rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid var(--border);
+
+    /* abstract background */
+    .bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+    .blob { position: absolute; border-radius: 50%; filter: blur(60px); opacity: 0.7; }
+    .b1 { width: 420px; height: 420px; background: var(--pink-soft); top: -120px; right: -100px; }
+    .b2 { width: 320px; height: 320px; background: #ff9ec4; opacity: 0.35; bottom: 8%; left: -120px; }
+    .b3 { width: 220px; height: 220px; background: var(--pink); opacity: 0.18; top: 45%; right: 8%; }
+    .ring {
+      position: absolute; width: 260px; height: 260px; border-radius: 50%;
+      border: 2px solid var(--line); top: 18%; left: 6%;
     }
+    .ring.two { width: 140px; height: 140px; top: auto; left: auto; bottom: 14%; right: 12%; }
+
+    .wrap { max-width: 760px; margin: 0 auto; padding: 3rem 1.25rem 2rem; }
+
+    header { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.1rem; margin-bottom: 1.75rem; padding-top: 0.5rem; }
     header img {
-      width: 96px; height: 96px;
-      border-radius: 50%;
-      object-fit: cover;
-      flex-shrink: 0;
-      border: 3px solid var(--border);
+      width: auto; height: auto; max-width: min(78vw, 340px); max-height: 420px;
+      object-fit: contain; background: none; border: 0; border-radius: 0; box-shadow: none;
+      filter: drop-shadow(0 14px 22px rgba(232, 68, 127, 0.3));
     }
-    h1 { font-size: 2rem; letter-spacing: -0.02em; margin-bottom: 0.25rem; }
-    h2 { font-size: 1.05rem; font-weight: 500; color: var(--muted); }
-    section { margin-top: 2.5rem; }
-    h3 {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted);
-      margin-bottom: 0.75rem;
-      font-weight: 600;
-    }
-    p { margin-bottom: 0.75rem; }
+    h1 { margin: 0; font-size: clamp(1.8rem, 6vw, 2.6rem); line-height: 1.15; }
+    .role { margin: 0.3rem 0 0; color: var(--muted); }
+    .role span { color: var(--pink); font-weight: 600; }
+
+    .cta { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; margin-top: 1rem; }
+    .cta a { padding: 0.65rem 1.3rem; border-radius: 999px; font-weight: 600; border: 1px solid var(--pink); }
+    .cta a.solid { background: var(--pink); color: #fff; }
+    .cta a:hover { text-decoration: none; filter: brightness(1.08); }
+
+    section { margin-top: 1.25rem; padding: 1.5rem; background: var(--card); border: 1px solid var(--line); border-radius: 20px; backdrop-filter: blur(8px); }
+    h3 { margin: 0 0 0.75rem; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--pink); }
+    p { margin: 0 0 0.75rem; }
     p:last-child { margin-bottom: 0; }
-    a { color: var(--accent); text-decoration: none; }
+
+    .projects { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    .project { padding: 1rem; border-radius: 14px; background: var(--pink-pale); border: 1px solid var(--line); }
+    .project b { display: block; margin-bottom: 0.25rem; }
+    .project span { font-size: 0.92rem; color: var(--muted); }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 0; list-style: none; }
+    .tags li { padding: 0.3rem 0.8rem; border-radius: 999px; background: var(--pink-soft); font-size: 0.9rem; }
+
+    form { display: grid; gap: 0.75rem; }
+    label { font-size: 0.9rem; color: var(--muted); display: grid; gap: 0.3rem; }
+    input, textarea {
+      font: inherit; color: var(--ink); width: 100%;
+      padding: 0.7rem 0.9rem; border-radius: 12px;
+      border: 1px solid var(--line); background: var(--pink-pale);
+    }
+    input:focus, textarea:focus { outline: 2px solid var(--pink); outline-offset: 1px; }
+    textarea { min-height: 120px; resize: vertical; }
+    button {
+      font: inherit; font-weight: 600; cursor: pointer; border: 0;
+      padding: 0.8rem 1.4rem; border-radius: 999px; color: #fff; background: var(--pink);
+      justify-self: start;
+    }
+    button:hover { filter: brightness(1.08); }
+    .alt { margin-top: 1rem; font-size: 0.95rem; color: var(--muted); }
+
+    a { color: var(--pink); text-decoration: none; font-weight: 500; }
     a:hover { text-decoration: underline; }
+    .links { display: flex; flex-wrap: wrap; gap: 0.6rem 1.2rem; padding: 0; margin: 0; list-style: none; }
 
-    /* Project cards */
-    .projects { display: flex; flex-direction: column; gap: 0.75rem; }
-    .project {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1rem 1.15rem;
-      transition: border-color 0.15s ease, transform 0.15s ease;
-    }
-    .project:hover {
-      border-color: var(--accent);
-      transform: translateY(-1px);
-    }
-    .project-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      margin-bottom: 0.25rem;
-    }
-    .project-title {
-      font-weight: 600;
-      font-size: 1.02rem;
-    }
-    .project-title a { color: var(--text); }
-    .project-title a:hover { color: var(--accent); text-decoration: none; }
-    .project-desc {
-      font-size: 0.92rem;
-      color: var(--muted);
-      margin-bottom: 0.5rem;
-    }
-    .project-links {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      font-size: 0.85rem;
-    }
-    .project-links a { font-weight: 500; }
-    .badge {
-      display: inline-block;
-      font-size: 0.7rem;
-      font-weight: 600;
-      padding: 0.2rem 0.55rem;
-      border-radius: 999px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .badge-live {
-      background: #d1fae5;
-      color: #065f46;
-    }
-    .badge-progress {
-      background: #fef3c7;
-      color: #92400e;
-    }
+    footer { margin-top: 2rem; text-align: center; font-size: 0.85rem; color: var(--muted); }
 
-    /* Focus chips */
-    ul.chips {
-      list-style: none; padding: 0;
-      display: flex; flex-wrap: wrap; gap: 0.5rem;
-    }
-    ul.chips li {
-      background: var(--card);
-      border: 1px solid var(--border);
-      padding: 0.35rem 0.85rem;
-      border-radius: 999px;
-      font-size: 0.9rem;
-    }
 
-    /* Social buttons */
-    ul.links {
-      list-style: none; padding: 0;
-      display: flex; flex-wrap: wrap; gap: 0.75rem;
-    }
-    ul.links li a {
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: all 0.15s ease;
-    }
-    ul.links li a:hover {
-      background: var(--accent);
-      color: #fff;
-      border-color: var(--accent);
-      text-decoration: none;
-    }
+    nav { position: sticky; top: 0.75rem; z-index: 5; display: flex; gap: 0.25rem; overflow-x: auto; padding: 0.4rem; margin-bottom: 1.5rem; background: var(--card); border: 1px solid var(--line); border-radius: 999px; backdrop-filter: blur(10px); scrollbar-width: none; }
+    nav::-webkit-scrollbar { display: none; }
+    nav a { flex: 0 0 auto; padding: 0.4rem 0.9rem; border-radius: 999px; font-size: 0.9rem; color: var(--ink); }
+    nav a:hover { background: var(--pink-soft); text-decoration: none; }
+    section[id] { scroll-margin-top: 4.5rem; }
 
-    /* Video */
-    .video-wrapper {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%; /* 16:9 */
-      height: 0;
-      overflow: hidden;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: #000;
-    }
-    .video-wrapper iframe,
-    .video-wrapper video {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      border: 0;
-    }
+    .stack { display: grid; gap: 1rem; }
+    .stack h4 { margin: 0 0 0.5rem; font-size: 0.95rem; color: var(--muted); font-weight: 600; }
 
-    footer {
-      margin-top: 4rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
+    .certs { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+    .cert { margin: 0; border-radius: 14px; overflow: hidden; background: var(--pink-pale); border: 1px solid var(--line); }
+    .cert button.thumb { display: block; width: 100%; padding: 0; border-radius: 0; background: var(--pink-soft); aspect-ratio: 4 / 3; cursor: zoom-in; }
+    .cert img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .cert figcaption { padding: 0.8rem 1rem; font-size: 0.92rem; }
+    .cert figcaption b { display: block; }
+    .cert figcaption span { color: var(--muted); }
+
+    .lightbox { position: fixed; inset: 0; z-index: 20; display: none; align-items: center; justify-content: center; padding: 1rem; background: rgba(40, 10, 28, 0.85); }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: 100%; max-height: 90vh; border-radius: 12px; }
+
     @media (max-width: 520px) {
-      body { padding: 2rem 1.25rem 3rem; }
-      header { flex-direction: column; text-align: center; gap: 1rem; }
-      h1 { font-size: 1.6rem; }
-      header img { width: 84px; height: 84px; }
+      .wrap { padding-top: 2rem; }
+      button { width: 100%; justify-self: stretch; }
     }
   </style>
 </head>
 <body>
+  <div class="bg" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="ring"></div>
+    <div class="ring two"></div>
+  </div>
 
-  <header>
-    <img src="photo.jpg" alt="Portrait of Dowel Jay Paosal" />
-    <div>
-      <h1>Dowel Jay Paosal</h1>
-      <h2>IT Student</h2>
-    </div>
-  </header>
-
-  <section>
-    <h3>About</h3>
-    <p>
-      Dowel Jay Paosal, also known online as <strong>doweljay</strong>, is an
-      Information Technology student at <strong>NORSU BSC</strong>
-      (Negros Oriental State University – Bais Campus), taking up
-      BS Information Technology.
-    </p>
-    <p>
-      He builds software projects ranging from small utilities to full systems
-      and shares his learning journey online.
-    </p>
-  </section>
-
-  <section>
-    <h3>Projects</h3>
-    <div class="projects">
-
-      <!-- Mock Calculator — LIVE -->
-      <div class="project">
-        <div class="project-head">
-          <span class="project-title">
-            <a href="https://kalkulator-dowel.vercel.app" target="_blank" rel="noopener">Mock Calculator</a>
-          </span>
-          <span class="badge badge-live">Live</span>
-        </div>
-        <p class="project-desc">A functional calculator app built as a practice project.</p>
-        <div class="project-links">
-          <a href="https://kalkulator-dowel.vercel.app" target="_blank" rel="noopener">▸ Live Demo</a>
-          <a href="https://github.com/doweljay/KALKULATOR" target="_blank" rel="noopener">▸ Source Code</a>
+  <div class="wrap">
+    <header>
+      <img src="pdowel-removebg-preview.png" alt="Portrait of Dowel Jay Paosal" />
+      <div>
+        <h1>Dowel Jay Paosal</h1>
+        <p class="role">IT student &middot; <span>Bayawan City, Negros Oriental</span></p>
+        <div class="cta">
+          <a class="solid" href="#contact">Message me</a>
+          <a href="#projects">See my work</a>
         </div>
       </div>
+    </header>
 
-      <!-- Ordering System — In Progress -->
-      <div class="project">
-        <div class="project-head">
-          <span class="project-title">Ordering System</span>
-          <span class="badge badge-progress">In Progress</span>
-        </div>
-        <p class="project-desc">A system for managing customer orders and transactions.</p>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#stack">Tech stack</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+      <h3>About</h3>
+      <p>I'm Dowel Jay Paosal, also known as doweljay. I'm taking up BS Information Technology at NORSU, Bayawan City Campus.</p>
+      <p>I build software, from small practice apps to full systems, and I post about what I'm learning.</p>
+    </section>
+
+    <section id="projects">
+      <h3>Projects</h3>
+      <div class="projects">
+        <div class="project"><b>Mock Calculator</b><span>A working calculator I built for practice.</span></div>
+        <div class="project"><b>Ordering System</b><span>Handles customer orders and transactions.</span></div>
+        <div class="project"><b>Basketball Scoreboard</b><span>A digital scoreboard that tracks game scores.</span></div>
       </div>
+    </section>
 
-      <!-- Basketball Scoreboard — In Progress -->
-      <div class="project">
-        <div class="project-head">
-          <span class="project-title">Basketball Scoreboard System</span>
-          <span class="badge badge-progress">In Progress</span>
+    <section id="stack">
+      <h3>Tech stack</h3>
+      <div class="stack">
+        <div>
+          <h4>Languages</h4>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <!-- Add more: <li>Python</li> -->
+          </ul>
         </div>
-        <p class="project-desc">A digital scoreboard for tracking basketball game scores.</p>
+        <div>
+          <h4>Tools</h4>
+          <ul class="tags">
+            <li>Git</li>
+            <li>GitHub</li>
+            <!-- Add more: <li>VS Code</li> -->
+          </ul>
+        </div>
+        <!-- Copy a whole <div> above to add a new group, like Frameworks or Databases -->
       </div>
+    </section>
 
-    </div>
-  </section>
+    <section id="certificates">
+      <h3>Certificates</h3>
+      <div class="certs">
+        <!-- To add a certificate: copy one <figure>, save the image in a "certs" folder, and change the text -->
+        <figure class="cert">
+          <button class="thumb" type="button" aria-label="View certificate"><img src="cert1.jpg" alt="Certificate 1" loading="lazy" /></button>
+          <figcaption><b>GeeksforGeeks</b><span>Sandeep Jain &middot; october 26 2023</span></figcaption>
+        </figure>
+        <figure class="cert">
+          <button class="thumb" type="button" aria-label="View certificate"><img src="cert2.jpg" alt="Certificate 2" loading="lazy" /></button>
+          <figcaption><b>IT CORP</b><span>Sarah Johnson &middot; Sept 11 2022</span></figcaption>
+        </figure>
+        <figure class="cert">
+          <button class="thumb" type="button" aria-label="View certificate"><img src="cert3.jpg" alt="Certificate 3" loading="lazy" /></button>
+          <figcaption><b>W3schools</b><span>Thomas Antensen &middot; May 18 2022</span></figcaption>
+        </figure>
+      </div>
+    </section>
 
-  <section>
-    <h3>Highlight Video</h3>
+    <section id="contact">
+      <h3>Send me a message</h3>
+      <form id="msg">
+        <label>Your name
+          <input type="text" id="name" required autocomplete="name" />
+        </label>
+        <label>Your email
+          <input type="email" id="email" required autocomplete="email" />
+        </label>
+        <label>Message
+          <textarea id="body" required></textarea>
+        </label>
+        <button type="submit">Send message</button>
+      </form>
+      <p class="alt">Prefer chat? Message me on <a href="https://www.instagram.com/ideal_dowel">Instagram</a> or <a href="https://www.facebook.com/profile.php?id=61590179946583">Facebook</a>.</p>
+    </section>
 
-    <div class="video-wrapper">
-  <video controls poster="photo.jpg">
-    <source src="dj.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</div>
-    </div>
-  </section>
+    <section>
+      <h3>Find me online</h3>
+      <ul class="links">
+        <li><a href="https://github.com/idealdowel">GitHub</a></li>
+        <li><a href="https://www.instagram.com/ideal_dowel">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@cokes_s">TikTok</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61590179946583/">Facebook</a></li>
+      </ul>
+    </section>
 
-  <section>
-    <h3>Focus Areas</h3>
-    <ul class="chips">
-      <li>Information Technology</li>
-      <li>Web Development</li>
-      <li>Software Development</li>
-      <li>JavaScript</li>
-      <li>HTML</li>
-      <li>CSS</li>
-    </ul>
-  </section>
+    <footer>&copy; <span id="year"></span> Dowel Jay Paosal &middot; Bayawan City, Philippines</footer>
+  </div>
 
-  <section>
-    <h3>Find Me Online</h3>
-    <ul class="links">
-      <li><a href="https://www.tiktok.com/@cokes_s" target="_blank" rel="noopener">TikTok</a></li>
-      <li><a href="https://github.com/idealdowel" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
-      <li><a href="https://www.instagram.com/ideal_dowel" target="_blank" rel="noopener">Instagram</a></li>
-    </ul>
-  </section>
-
-  <footer>
-    © <span id="year"></span> Dowel Jay Paosal.
-  </footer>
+  <div class="lightbox" id="lightbox"><img alt="" /></div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    var lb = document.getElementById('lightbox');
+    var lbImg = lb.querySelector('img');
+    document.querySelectorAll('.cert .thumb').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var img = btn.querySelector('img');
+        lbImg.src = img.src; lbImg.alt = img.alt;
+        lb.classList.add('open');
+      });
+    });
+    lb.addEventListener('click', function () { lb.classList.remove('open'); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') lb.classList.remove('open'); });
+
+    // Replace with your real email address
+    var MY_EMAIL = 'doweljay68@gmail.com';
+
+    document.getElementById('msg').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var body = document.getElementById('body').value;
+      var subject = 'Message from ' + name + ' (portfolio)';
+      var text = body + '\n\nFrom: ' + name + ' <' + email + '>';
+      window.location.href = 'mailto:' + MY_EMAIL +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(text);
+    });
   </script>
 </body>
 </html>
